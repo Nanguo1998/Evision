@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">E视界</string>
+    <string name="user_name">用户名</string>
+    <string name="pass_word">密码</string>
+    <string name="User_name">请在此处输入用户名</string>
+    <string name="Pass_word">请在此处输入密码</string>
+    <string name="text_view1">手机诚可贵，眼睛价更高；</string>
+    <string name="text_view2">若为视力好，手机就关掉！</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="e_mail">邮箱</string>
+    <string name="E_mail">请在此处输入邮箱</string>
+    <string name="signinsignup">注册并登录</string>
+    <string name="tips">不要沉迷手机哦！</string>
+    <string name="relax">轻松一刻</string>
+    <string name="leaderboard">谁与争锋</string>
+    <string name="eyescare">护眼常识</string>
+    <string name="person_information">个人信息</string>
+    <string name="forgetpassword_tips">输入账号绑定邮箱并点击确认按钮后，\n
+                                          会在该邮箱内收到重置密码的邮件</string>
+    <string name="done_days">已打卡天数</string>
+</resources>

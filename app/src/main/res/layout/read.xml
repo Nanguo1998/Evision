@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="167dp"
+        android:background="@null"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_ld"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☀"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/sb_ld"
+                style="@android:style/Widget.DeviceDefault.SeekBar"
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:max="255"
+                android:thumb="@drawable/ads16" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:gravity="center"-->
+        <!--android:text="" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_r"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="RD"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:visibility="invisible" />
+
+            <SeekBar
+                android:id="@+id/sb_r"
+                android:layout_width="255dp"
+                android:layout_height="7dp"
+                android:max="255"
+                android:progressDrawable="@android:drawable/button_onoff_indicator_off"
+                android:thumb="@android:drawable/ic_menu_mylocation"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/read_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:gravity="center"-->
+        <!--android:text="" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_b"
+            android:layout_width="279dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="滤光"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:visibility="visible" />
+
+            <SeekBar
+                android:id="@+id/sb_b"
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:max="255"
+                android:thumb="@drawable/ads16"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/read_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:gravity="center"-->
+        <!--android:text="" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_g"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="GN"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:visibility="invisible" />
+
+            <SeekBar
+                android:id="@+id/sb_g"
+                android:layout_width="255dp"
+                android:layout_height="3dp"
+                android:max="255"
+                android:progressDrawable="@android:drawable/button_onoff_indicator_off"
+                android:thumb="@android:drawable/ic_menu_send"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/read_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:gravity="center"-->
+        <!--android:text="" />-->
+
+        <LinearLayout
+            android:layout_width="316dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/eye_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/eye_off" />
+
+            <TextView
+                android:id="@+id/eye_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="手动模式"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/read_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:gravity="center"-->
+        <!--android:text="" />-->
+
+        <RadioGroup
+            android:id="@+id/read_group_readio"
+            android:layout_width="717dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_normal"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="正常模式" />
+
+            <RadioButton
+                android:id="@+id/radio_game"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/ads253"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radio_read"
+                android:layout_width="37dp"
+                android:layout_height="32dp"
+                android:button="@drawable/ads12" />
+
+            <RadioButton
+                android:id="@+id/radio_recommend"
+                android:layout_width="37dp"
+                android:layout_height="32dp"
+                android:button="@drawable/ads14" />
+
+            <RadioButton
+                android:id="@+id/radio_outdoor"
+                android:layout_width="37dp"
+                android:layout_height="32dp"
+                android:button="@drawable/ads13" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

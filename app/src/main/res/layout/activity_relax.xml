@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game.relax">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/background"></include>
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:text="轻松测试"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include4" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:onClick="game_vision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_vision" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="164dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="game_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_color" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="161dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="game_fatigue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/game_fatigue" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="160dp"
+        android:layout_height="158dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="game_astig"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/game_astig" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="returnmain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tomain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

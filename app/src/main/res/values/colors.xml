@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FB4B8B</color>
+
+    <color name="color_read">#B3E3EDCD</color>
+    <color name="color_game">#B3FFF2E2</color>
+    <color name="color_outdoor">#B3FFFFFF</color>
+    <color name="color_recommend">#B3FAF9DE</color>
+</resources>

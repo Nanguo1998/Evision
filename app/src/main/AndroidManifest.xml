@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e">
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Calendar.Calendar"></activity>
+        <activity android:name=".EPV.EPV" />
+        <activity android:name=".game.mainact" />
+        <activity android:name=".news.new5" />
+        <activity android:name=".news.new4" />
+        <activity android:name=".news.new3" />
+        <activity android:name=".news.new2" />
+        <activity android:name=".news.new1" />
+        <activity android:name=".news.News" />
+        <activity android:name=".game.stopvision45" />
+        <activity android:name=".game.stopvision44" />
+        <activity android:name=".game.stopvision43" />
+        <activity android:name=".game.stopvision42" />
+        <activity android:name=".game.stopvision41" />
+        <activity android:name=".game.stopvision40" />
+        <activity android:name=".game.stopvision39" />
+        <activity android:name=".game.stopvision38" />
+        <activity android:name=".game.stopvision37" />
+        <activity android:name=".game.stopvision36" />
+        <activity android:name=".game.vision45" />
+        <activity android:name=".game.vision44" />
+        <activity android:name=".game.vision43" />
+        <activity android:name=".game.vision42" />
+        <activity android:name=".game.vision41" />
+        <activity android:name=".game.vision40" />
+        <activity android:name=".game.vision39" />
+        <activity android:name=".game.vision38" />
+        <activity android:name=".game.vision37" />
+        <activity android:name=".game.vision36" />
+        <activity android:name=".game.vision35" />
+        <activity android:name=".game.Vision" />
+        <activity android:name=".game.stopvision35" />
+        <activity android:name=".game.fatigue_red" />
+        <activity android:name=".game.fatigue_green" />
+        <activity android:name=".game.Fatigue" />
+        <activity android:name=".game.Exercise" />
+        <activity android:name=".game.color_success" />
+        <activity android:name=".game.color_fail" />
+        <activity android:name=".game.color2" />
+        <activity android:name=".game.color1" />
+        <activity android:name=".game.Color" />
+        <activity android:name=".game.astig_success" />
+        <activity android:name=".game.astig_fail" />
+        <activity android:name=".game.astig2" />
+        <activity android:name=".game.Astig" />
+        <activity android:name=".game.relax" />
+        <activity android:name=".Leaderboard" />
+        <activity android:name=".Person" />
+        <activity android:name=".Forgetpassword" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Signin" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 即时通讯模块、推送（均需要加入以下声明） START -->
+        <!-- 即时通讯模块、推送都要使用 PushService -->
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- 即时通讯模块、推送 END -->
+        <!-- 反馈组件（需要加入以下声明）START -->
+        <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" />
+    </application>
+
+</manifest>
